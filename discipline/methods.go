@@ -415,7 +415,7 @@ func ExportSqlite() error {
 
 	ctx := context.Background()
 
-	cfg, err := config.LoadDefaultConfig(ctx, config.WithSharedConfigProfile("vinamrgrover"))
+	cfg, err := config.LoadDefaultConfig(ctx, config.WithRegion("ap-south-1"))
 
 	if err != nil {
 		return err
