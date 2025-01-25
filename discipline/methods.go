@@ -369,7 +369,7 @@ func ImportSqlite() error {
 
 	ctx := context.Background()
 
-	cfg, err := config.LoadDefaultConfig(ctx, config.WithSharedConfigProfile("vinamrgrover"))
+	cfg, err := config.LoadDefaultConfig(ctx)
 
 	if err != nil {
 		return err
