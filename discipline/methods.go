@@ -369,7 +369,7 @@ func ImportSqlite() error {
 
 	ctx := context.Background()
 
-	cfg, err := config.LoadDefaultConfig(ctx)
+	cfg, err := config.LoadDefaultConfig(ctx, config.WithRegion("ap-south-1"))
 
 	if err != nil {
 		return err
